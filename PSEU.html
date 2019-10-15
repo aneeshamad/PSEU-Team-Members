@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> PSEU </title>
+    <link href="css/pseu.css" rel="stylesheet">
+    <!-- <script src="./js/index.js"></script> -->
+</head>
+
+<body>
+
+    
+    <div class="pseu">
+        <h1>
+            PSEU Team Memebers
+        </h1>
+    </div>
+    <div class=" root">
+
+        <div class="add_new_member">
+
+            <h2> Add new member</h2>
+
+            <div class="input-wrapper">
+                <input class="input-control" type="text" placeholder="  Name " id="name">
+            </div>
+            <div class="input-wrapper">
+                <input class="input-control" type="text" placeholder="  Email "id="email"  >
+            </div>
+
+            <div class="input-wrapper">
+                <select class="input-control" id="major">
+                    <option value="0">Major</option>
+                    <option value="1">Computer Science</option>
+                    <option value="2">Computer Engineering </option>
+                    <option value="3">Information Technology </option>
+                    <option value="4">Information System </option>
+                </select>
+            </div>
+            <div class="input-wrapper" >
+                <select class="input-control" id="role">
+                    <option value="0">Role</option>
+                    <option value="1">Front-End Developer</option>
+                    <option value="2">Front-End Developer </option>
+                    <option value="3">ull-Stack Developer </option>
+                    <option value="4">UI/UX Designer</option>
+                </select>
+            </div>
+
+            <div class="input-wrapper" >
+                <textarea class="input-control textarea-control" type="text" placeholder="Biography" id="bio"></textarea>
+            </div>
+
+            <div class="checkbox" >
+                <input type="checkbox" id="check">
+                <label> Add to bottom / or add index </label>
+                <input class="number" type="number" id="index">
+
+            </div>
+
+            <button class="save" onclick="save()"  >save</button>
+
+        </div>
+        <div class="main_div">
+            <div class="filter-bar">
+                <div class="menu_div">
+                    <h5>
+                        SORT BY
+                    </h5>
+                    <select class="alpha" id="alpha">
+                        <option value="0">A-Z</option>
+                        <option value="1">Z-A</option>
+                        <option value="2">newest </option>
+                        <option value="3">oldest </option>
+                    </select>
+                    <div class="border">
+
+                    </div>
+                    <select class="major" id="_Major">
+                        <option value="0">Major</option>
+                        <option value="1">Computer Science</option>
+                        <option value="2">Computer Engineering </option>
+                        <option value="3">Information Technology </option>
+                        <option value="4">Information System </option>
+                    </select>
+                    <select class="role" id="_Role">
+                        <option value="0">Role</option>
+                        <option value="1">Front-End Developer</option>
+                        <option value="2">Front-End Developer </option>
+                        <option value="3">ull-Stack Developer </option>
+                        <option value="4">UI/UX Designer</option>
+                    </select>
+                    <div class="border">
+
+                    </div>
+                    <input class="name_input" type="text" placeholder="search by name... " id="search">
+                </div>
+
+                <div class="num">
+                    <h3 id="num_of_mem" >0 </h3>
+                    <h4> Item</h4>
+                </div>
+            </div>
+            <div class="members" id="members">
+                <div class="mini">
+                    <div class="del_btn">
+                        <button id="delet"> - </button>
+                    </div>
+
+                    <div class="info">
+                        <h3 id="head"> Anees Hammad  </h3>
+                        <h4 id=" discrip"> aneeshamad91@gmail.com /Computer Engineering / Back-end Developer</h4>
+                        <p id=" detal">We ask all of our members to keep their forum messages free of self-promoting advertisements or solicitation of any kind - members affiliated with any tourism-related business should not include commercial contact information or URLs in their forum messages. We ask all of our members to keep their forum messages free of self-promoting advertisements or solicitation of any kind
+                        </p>
+                    </div>
+                </div>
+                
+                </div>
+
+            </div>
+    </div>
+   
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+           <span class="close">&times;</span>
+           <h1 > Anees Hammad </h1>
+           <div class="minidetiels">
+              <input  type="text" name="aneeshamad91@gmail.com" value="aneeshamad91@gmail.com">
+              <h4> / </h4>
+              <select>
+                 <option value="Information Technology">Information Technology</option>
+                 <option value="Computer Engineering ">Computer Engineering </option>
+                 <option value="Computer Science ">Computer Science </option>
+                 <option value="Information System ">Information System </option>
+              </select>
+              <h4> / </h4>
+              <select>
+                 <option value="Front-End Developer">Front-End Developer</option>
+                 <option value="Back-End Developer  ">Back-End Developer </option>
+                 <option value="Full-Stack Developer  ">Full-Stack Developer  </option>
+              </select>
+           </div>
+           <P> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+           </P>
+           <div class="btns">
+              <button class="delete" > DELETE </button>
+              <button class="save_btn" > SAVE </button>
+              <button class="cancel" > CANCEL </button>
+           </div>
+        </div>
+    </div>
+
+   
+</body>
+<script src="js/index.js"></script>
+
+</html>
